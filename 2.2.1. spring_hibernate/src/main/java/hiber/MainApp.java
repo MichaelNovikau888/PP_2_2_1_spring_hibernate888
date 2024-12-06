@@ -15,7 +15,9 @@ public class MainApp {
       AnnotationConfigApplicationContext context =
               new AnnotationConfigApplicationContext(AppConfig.class);
 
-      UserService userService = context.getBean(UserServiceImp.class);
+
+
+      UserService userService = context.getBean(UserService.class);
 
       Car car1 = new Car();
       car1.setModel("Toyota");
